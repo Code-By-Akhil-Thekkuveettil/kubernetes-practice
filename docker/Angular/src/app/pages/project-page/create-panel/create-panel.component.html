@@ -1,0 +1,1073 @@
+<div class="app-main__inner">
+    <div class="app-page-title">
+        <div class="page-title-wrapper">
+            <div class="page-title-heading">
+                <div class="page-title-icon">
+                    <i class="pe-7s-copy-file icon-gradient bg-mean-fruit">
+                    </i>
+                </div>
+                <div>Create Sub Panel
+                    <div class="page-title-subheading">In this page we can manage subpanels.
+                    </div>
+                </div>
+            </div>
+            <div class="page-title-actions d-none">
+                <div class="page-title-right">
+                    <!-- <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a routerLink="/dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a routerLink="/project">Projects</a></li>
+                        <li class="breadcrumb-item active"><a>Create Panel</a></li>
+                    </ol> -->
+                    <div class="btn-actions-pane-right">                                                                               
+                        <a (click)="goToProject()" type="button" class="btn mr-2 mb-2 btn-primary">Back to Projects</a>
+                </div>
+                </div>
+                <!-- <a href="createproject.html" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-primary">
+                    <i class="fa fa-plus"></i> Create Project
+                </a> -->
+                <!-- <div class="d-inline-block dropdown">
+                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                        <span class="btn-icon-wrapper pr-2 opacity-7">
+                            <i class="fa fa-business-time fa-w-20"></i>
+                        </span>
+                        Buttons
+                    </button>
+                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="nav-link">
+                                    <i class="nav-link-icon lnr-inbox"></i>
+                                    <span>
+                                        Inbox
+                                    </span>
+                                    <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="nav-link">
+                                    <i class="nav-link-icon lnr-book"></i>
+                                    <span>
+                                        Book
+                                    </span>
+                                    <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="nav-link">
+                                    <i class="nav-link-icon lnr-picture"></i>
+                                    <span>
+                                        Picture
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a disabled href="javascript:void(0);" class="nav-link disabled">
+                                    <i class="nav-link-icon lnr-file-empty"></i>
+                                    <span>
+                                        File Disabled
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div> 
+            <div class="page-title-actions">
+                <!-- <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a (click)="goToProject()">Project</a></li>
+                        <li class="breadcrumb-item active"><a routerLink="/project">Inivitation</a></li>
+                    </ol>
+                </div>                 -->
+            </div>       
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- <div class="main-card mb-3 card">
+                <div class="card-header">Create Panel / Invitation  
+                                                         
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                            <thead>
+                            <tr>                                               
+                                <th>Project Details</th>
+                                <th class="text-left">Lifecycle</th>
+                                <th class="text-left">Project Manager</th>
+                                <th class="text-left">Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>                                               
+                                <td>
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="widget-content-left">
+                                                    <div class="swatch-holder swatch-holder-lg bg-info" id="TooltipC-3" data-toggle="tooltip" title="In-Progress"></div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left flex2">
+                                                <div class="widget-heading"><a href="createproject.html">Q456789</a></div>
+                                                <div class="widget-subheading opacity-7">WK Data Analystics Research (Q456789-WOL-WOL-2410-01)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-left">Open-QUAL</td>
+                                <td class="text-left">
+                                    Pallave Kapoor
+                                </td>
+                                <td class="text-left">
+                                    Invited
+                                </td>                                                    
+                            </tr>                                                                                          
+                            </tbody>
+                        </table>
+                    </div>  
+                </div>                                                                      
+            </div> -->
+            <div class="main-card card mb-3" id="createpanelmain">
+                <div class="card-header">Create Sub Panel / Invitation  
+                                                         
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="projectname d-flex justify-content-between align-items-center">
+                            <div class="widget-content-left mr-3">
+                                <div class="widget-content-left">
+                                    <div class="swatch-holder swatch-holder-lg bg-info" id="TooltipC-3" data-toggle="tooltip" title="" data-original-title="In-Progress"></div>
+                                </div>
+                            </div>
+                            <div>
+                              <!-- <h3 class="mt-0 font-weight-bold">{{projectDetails.unique_id}}</h3> -->
+                              <h3 class="mt-0 font-weight-bold">{{projectDetails.name}}</h3>
+                            <p class="mb-2">{{projectDetails.unique_id}}  
+                                <span *ngIf="projectDetails.client">{{projectDetails.client}}-</span> 
+                                <span *ngIf="projectDetails.alternate_project_code"> {{projectDetails.alternate_project_code}}-</span>
+                                <span *ngIf="projectDetails.client_project_code">{{projectDetails.client_project_code}}</span></p>
+                            <div class="projectdetails d-flex align-items-center">
+                                <div class="lifecyle mr-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="pe-7s-refresh-2 mr-2 text-dark"></i>
+                                        <h3 class="mb-0  text-dark">{{projectDetails.status}}</h3>
+                                    </div>
+                                </div>
+                                <div class="manager">
+                                    <div class="d-flex align-items-center">
+                                        <i class="pe-7s-user mr-2 text-dark"></i>
+                                        <h3 class="mb-0 text-dark">{{projectDetails.lead_project_manager}}</h3>
+                                    </div>
+                                </div>
+                            </div>  
+                            </div>
+                            
+                            
+                        </div>
+                        <!-- <div class="status">
+                            <div class="badge badge-info">Invited</div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-card card mb-3" id="createpanel" *ngIf="showAddSelection">
+                <div class="card-body">
+                    <img src="assets/images/emptytable.svg">
+                    <div class="addselection text-center">
+                        <img src="assets/images/addvector.png" width="80" class="mb-3">
+                        <div>
+                            <button type="button" class="btn btn-primary" (click)="showAddSelection =  false">
+                                <i class="pe-7s-plus"></i> Add Selection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>    
+    <div class="row" id="accordianselection" *ngIf="!showAddSelection">
+        <div class="col-lg-7">
+            <div class="main-card card mb-3" id="createpanelmain">
+                <div class="card-header"> Filter Selection
+                    
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        <div class="form-group">
+                            <label *ngIf="subPanelList?.length == 0">New Selection</label>
+                    <label *ngIf="subPanelList?.length > 0">Selection</label>
+                    <ng-select
+                    *ngIf="subPanelList?.length > 0"
+                            id="subpanel"
+                            name="subpanel"
+                            [items]="subPanelList"
+                            bindValue="token"
+                            [(ngModel)]="selectedSubPanel"
+                            [multiple]="false"
+                            placeholder="Select the sub panel"
+                            required
+                            #subpanel="ngModel"
+                            (change)="subpanelChanges($event)"
+                            >
+                            <ng-template ng-label-tmp let-item="item">
+                                {{ item.name }}
+                                </ng-template>
+                                <ng-template ng-option-tmp let-item="item">
+                                {{ item.name }}
+                                </ng-template>
+                        </ng-select>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="panelcountry">
+                             <h5>Select Panel and Country</h5>
+                        <div class="form-group">
+                            <form class="row ">
+                                <div class=" col-lg-6">
+                                    <label for="exampleEmail22" class="mr-sm-2">Panel</label>
+                                    <!-- <select value="Cole" class="form-control">
+                                        <option>Cole</option>
+                                        <option>Dwight</option>
+                                        <option>Jessica</option>
+                                        <option>Sai Pallavi</option>
+                                        <option>Kishore</option>
+                                        <option>Sara</option>
+                                    </select> -->
+                                    <ng-select
+                                        id="panel"
+                                        name="panel"
+                                        [items]="panelList"
+                                        bindValue="token"
+                                        [(ngModel)]="subPanel.panel"
+                                        [multiple]="false"
+                                        placeholder="Select the Panel"
+                                        required
+                                        #panel="ngModel"
+                                        >
+                                        <ng-template ng-label-tmp let-item="item">
+                                            {{ item.name }}
+                                            </ng-template>
+                                            <ng-template ng-option-tmp let-item="item">
+                                            {{ item.name }}
+                                            </ng-template>
+                                    </ng-select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="examplePassword22" class="mr-sm-2">Country</label>
+                                    <ng-select
+                                            id="country"
+                                            name="country"
+                                            [items]="countryList"
+                                            bindLabel="name"
+                                            bindValue="id"
+                                            [(ngModel)]="panelInput.workCountry"
+                                            [multiple]="false"
+                                            
+                                            placeholder="Select your country"
+                                            required
+                                            #country="ngModel"
+                                            (change)="onCountryChange($event)"
+                                            >
+                                            </ng-select>
+                                        <div *ngIf="country.invalid && country.touched" class="text-danger">  Please select country.
+                                        </div>
+                                </div>  
+                                                                               
+                            </form>
+                            <span class="mt-2">To create a selection you need to choose a panel and a country</span> 
+                        </div>
+                        </div>
+                       
+                        <div class="divider"></div>
+                    </div>
+                    <div class="otherselection" *ngIf="subPanel.panel">
+                        <h5>Select filter to save your favourite</h5>
+                        <mat-accordion>
+                            <!-- <mat-expansion-panel>
+                              <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    System Filters
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                </mat-panel-description>
+                              </mat-expansion-panel-header>
+                              <div class="card-body">
+                                <form class="">
+                                    <div class="form-row">
+                                        <div class="col-md-6">
+                                            <div class="position-relative form-group"><label for="Email" class="">Email</label><input name="email" id="Email" placeholder="Enter the email" type="email" class="form-control"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="position-relative form-group"><label for="examplePassword11" class="">Password</label><input name="password" id="examplePassword11" placeholder="password placeholder" type="password" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative form-group"><label for="exampleAddress" class="">Address</label><input name="address" id="exampleAddress" placeholder="1234 Main St" type="text" class="form-control"></div>
+                                    <div class="position-relative form-group"><label for="exampleAddress2" class="">Address 2</label><input name="address2" id="exampleAddress2" placeholder="Apartment, studio, or floor" type="text" class="form-control">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6">
+                                            <div class="position-relative form-group"><label for="exampleCity" class="">City</label><input name="city" id="exampleCity" type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="position-relative form-group"><label for="exampleState" class="">State</label><input name="state" id="exampleState" type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="position-relative form-group"><label for="exampleZip" class="">Zip</label><input name="zip" id="exampleZip" type="text" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            </mat-expansion-panel> -->
+                      
+                            <mat-expansion-panel>
+                              <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    Section 1 : Personal Information
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                    
+                                </mat-panel-description>
+                              </mat-expansion-panel-header>
+                              <div class="position-relative form-group">
+                                <label class="">First Name</label>
+                                <input name="name" id="firstname" placeholder="Enter your name"
+                                     type="text" class="form-control" [(ngModel)]="panelInput.firstname" #nameModel="ngModel">
+                                    <div *ngIf="nameModel.touched && nameModel.invalid">
+                                        <small class="error" *ngIf="nameModel.errors?.['required']">First name is required.</small>
+                                    </div>
+                            </div>
+                             <div class="position-relative form-group">
+                                <label class="">Last Name</label>
+                                <input name="lastname" id="lastname" placeholder="Enter your name" type="text" class="form-control" [(ngModel)]="panelInput.lastname" (change)="panelInput.lastname=panelInput.lastname.trim()" #lastnameModel="ngModel">
+                                <div *ngIf="lastnameModel.touched && lastnameModel.invalid">
+                                    <small class="text-danger" *ngIf="lastnameModel.errors?.['required']">Last name is required.</small>
+                                </div>
+                            </div>
+                            <div class="position-relative form-group">
+                                <label class="">Business Email Address
+                                 <!-- <br> -->
+                                 <!-- <span class="infoText">To ensure the authenticity of your registration and confirm that you are a licensed medical professional, please provide your business email address. A business email address typically includes your organization or institution's domain (e.g., name&#64;hospital.org or name&#64;clinic.com). Personal email addresses (e.g., Gmail, Yahoo) may not be accepted for verification purposes.</span> -->
+                                </label>
+                                <input name="wemail" id="wemail" pattern="^[a-zA-Z0-9._%+-]+@(?!gmail\.com$|yahoo\.com$|outlook\.com$|hotmail\.com$|gmail\.[a-zA-Z]{2,}$|yahoo\.[a-zA-Z]{2,}$|outlook\.[a-zA-Z]{2,}$)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" [(ngModel)]="panelInput.workemail" placeholder="Enter your business email address"
+                                 type="email" class="form-control" #wemailModel="ngModel">
+                                 <div *ngIf="wemailModel.touched && wemailModel.invalid">
+                                    <small class="text-danger" *ngIf="wemailModel.errors?.['required']">Email is required.</small>
+                                    <small class="text-danger" *ngIf="wemailModel.errors?.['pattern']">Email is invalid.</small>
+                                </div>
+                            </div>
+                                <div class="position-relative form-group">
+                                    <label class="">Personal Email Address
+                                    </label>
+                                    <input name="email" id="emailaddress" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" [(ngModel)]="panelInput.email" placeholder="Enter your email"
+                                     type="email" class="form-control" #emailModel="ngModel">
+                                     <div *ngIf="emailModel.touched && emailModel.invalid">
+                                        <small class="text-danger" *ngIf="emailModel.errors?.['required']">Email is required.</small>
+                                        <small class="text-danger" *ngIf="emailModel.errors?.['pattern']">Email is invalid.</small>
+                                    </div>
+                                </div>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                  <mat-panel-title>
+                                      Section 2 :General HCP Information
+                                  </mat-panel-title>
+                                  <mat-panel-description>
+                                    
+                                  </mat-panel-description>
+                                </mat-expansion-panel-header>
+                                <div class="position-relative form-group">
+                                    <label for="exampleSelect" class="">Profession</label>
+                                       <ng-select
+                                       id="professionSelect"
+                                       name="profession"
+                                       [items]="professionData"
+                                       bindLabel="name"
+                                       bindValue="id"
+                                       [(ngModel)]="panelInput.profession"
+                                       [multiple]="false"
+                                       
+                                       (change)="onprofessionChange($event)"
+                                       #professionSelect="ngModel"
+                                       placeholder="Search your profession"
+                                       >
+                                       </ng-select>
+                                       <!-- <div *ngIf="professionSelect.invalid && professionSelect.touched" class="text-danger">
+                                           Please select at least one profession.
+                                       </div> -->
+                                       <input *ngIf="panelInput.profession == 18" name="otherProfession" id="profession" [(ngModel)]="panelInput.otherProfession" autocomplete="off" placeholder="Please specify the profession" type="text" class="form-control mt-2" #otherProfession="ngModel">
+
+                               </div>
+                               <div class="position-relative form-group">
+                                <label for="exampleSelect" class="">Degree</label>
+                                 <ng-select
+                                            id="degreeSelect"
+                                            name="degrees"
+                                            [items]="degrees"
+                                            bindLabel="name"
+                                            bindValue="id"
+                                            [(ngModel)]="panelInput.degree"
+                                            [multiple]="true"
+                                            (change)="ondegreeChange($event)"
+                                            #degreeSelect="ngModel"
+                                            placeholder="Search your degree"
+                                            >
+                                 </ng-select>
+                                 <!-- <div *ngIf="degreeSelect.invalid && degreeSelect.touched" class="text-danger">
+                                    Please select at least one degree.
+                                  </div> -->
+                                  <input *ngIf="panelInput.degree && panelInput.degree.includes(14)"  name="otherdegree" id="otherdegree" [(ngModel)]="panelInput.otherdegree" autocomplete="off" placeholder="Please specify the degree" type="text" class="form-control mt-2" #otherdegree="ngModel">
+                                </div>
+                            <div class="position-relative form-group" *ngIf="panelInput.profession == 1  || panelInput.profession == 2 || panelInput.profession == 8">
+                                <label for="exampleSelect" class=""> 
+                                Primary medical or practice speciality</label>
+                                <ng-select
+                                        id="primaryMedicalSpecialitySelect"
+                                        name="primaryMedicalSpeciality"
+                                        [items]="medicalspecalityData"
+                                        bindLabel="name"
+                                        bindValue="id"
+                                        [(ngModel)]="panelInput.primaryMedicalSpeciality"
+                                        [multiple]="false"
+                                        
+                                        placeholder="Search your primary Medical Speciality"
+                                        (change)="onprimaryMedicalSpecialityChange($event)"
+                                        #primaryMedicalSpecialitySelect="ngModel"
+                                        
+                                        >
+                                        </ng-select>
+                                    <div *ngIf="primaryMedicalSpecialitySelect.invalid && primaryMedicalSpecialitySelect.touched" class="text-danger">  Please select at least one degree.
+                                    </div>
+                                    <input *ngIf="panelInput.primaryMedicalSpeciality == 181" name="otherprimaryMedicalSpecialityname" id="otherprimaryMedicalSpecialityname" [(ngModel)]="panelInput.otherprimaryMedicalSpecialityname" autocomplete="off" type="text" class="form-control mt-2" #otherprimaryMedicalSpecialityname="ngModel">
+                            </div>
+                            <div class="position-relative form-group">
+                                <label class="">Please indicate the year when you first began working in your current profession</label>
+                                <input name="yearofwork" id="yearofwork" type="text"
+                                    class="form-control" [(ngModel)]="panelInput.yearstartedWorking" #yearofworkModel="ngModel"
+                                    pattern="^(19[0-9]{2}|20[0-2][0-4])$" (keypress)="keyPressNumbersWithDecimal($event)">
+                                <div *ngIf="yearofworkModel.touched && yearofworkModel.invalid">
+                                    <small class="text-danger" *ngIf="yearofworkModel.errors?.['required']">Year is
+                                        required.</small>
+                                    <small class="text-danger" *ngIf="yearofworkModel.errors?.['pattern']">
+                                        Year must be between 1900 and 2024.
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="position-relative form-group">
+                                <label class="">What is your National Provider Index (NPI) Number ?</label>
+                                <input name="NPInumber" id="NPInumber" required [(ngModel)]="panelInput.NPInumber" maxlength="10"  autocomplete="off" (keypress)="keyPressNumbersWithDecimal($event)" pattern="^[0-9]{10}$" type="text" class="form-control" #npinumberModel="ngModel">
+                                <div *ngIf="npinumberModel.touched && npinumberModel.invalid">
+                                    <small class="text-danger" *ngIf="npinumberModel.errors?.['required']">NPI Number is required.</small>
+                                    <small class="text-danger" *ngIf="npinumberModel.errors?.['pattern']">NPI Number is invalid.</small>
+                                </div>
+                            </div>
+
+                            <div class="position-relative form-group">
+                                <label class="">What is your National Health Services (NHS) Number ?</label>
+                                <input name="NHSnumber" id="NHSnumber" required [(ngModel)]="panelInput.NHSNumber" maxlength="10" (keypress)="keyPressNumbersWithDecimal($event)"  autocomplete="off" pattern="^[0-9]{10}$" type="text" class="form-control" #NHSnumberModel="ngModel">
+                                <div *ngIf="NHSnumberModel.touched && NHSnumberModel.invalid">
+                                    <small class="text-danger" *ngIf="NHSnumberModel.errors?.['required']">NHS Number is required.</small>
+                                    <small class="text-danger" *ngIf="NHSnumberModel.errors?.['pattern']">NHS Number is invalid.</small>
+                                </div>
+                            </div>
+                            <div class="position-relative form-group">
+                                <label for="exampleSelect" class="">What is your gender?</label>
+                                <ng-select
+                                        id="gender"
+                                        name="gender"
+                                        [items]="genders"
+                                         bindLabel="name"
+                                        bindValue="id"
+                                        [(ngModel)]="panelInput.gender"
+                                        [multiple]="false"
+                                        
+                                        #gender="ngModel"
+                                        placeholder="Search your gender"
+                                        (change)="ongenderChange($event)"
+                                        >
+                                        </ng-select>
+                                    <div *ngIf="gender.invalid && gender.touched" class="text-danger">  Please select gender.
+                                    </div>
+                                    <input *ngIf="panelInput.gender == 5" name="othergendername" id="othergendername" [(ngModel)]="panelInput.othergendername" autocomplete="off" placeholder="Please specify the gender" type="text" class="form-control mt-2" #othergendername="ngModel">
+                            </div>
+                            <div class="position-relative form-group">
+                                <label class="">What is your year of birth ? </label>
+                                <input name="yearOfbirth" id="yearOfbirth" type="text"
+                                    class="form-control" [(ngModel)]="panelInput.yearofBirth" #yearbirthModel="ngModel"
+                                    pattern="^(19[0-9]{2}|20[0-2][0-4])$" (keypress)="keyPressNumbersWithDecimal($event)">
+                                <div *ngIf="yearbirthModel.touched && yearbirthModel.invalid">
+                                    <small class="text-danger" *ngIf="yearbirthModel.errors?.['required']">Year is
+                                        required.</small>
+                                    <small class="text-danger" *ngIf="yearbirthModel.errors?.['pattern']">
+                                        Year must be between 1900 and 2024.
+                                    </small>
+                                </div>
+                            </div>
+                              </mat-expansion-panel>
+                              <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                  <mat-panel-title>
+                                      Section 3 : Further info
+                                  </mat-panel-title>
+                                  <mat-panel-description>
+                                    
+                                  </mat-panel-description>
+                                </mat-expansion-panel-header>
+                               <div>
+                                <div class="position-relative form-group" *ngIf="panelInput.profession == 1 || panelInput.profession == 2 || panelInput.profession == 8">
+                                    <label class=""> What are your secondary medical or practice specialities, if any?  If none, please write none or skip this question.</label>
+                                    <input name="secondarypractice" id="secondarypractice" [(ngModel)]="panelInput.secondaryMedicalSpecialities" placeholder="Secondary medical / practice Specialities" type="text" class="form-control"  #secondarypractice="ngModel">
+                                    <!-- <div *ngIf="secondarypractice.touched && secondarypractice.invalid">
+                                        <small class="text-danger" *ngIf="secondarypractice.errors?.['required']">This is required.</small>
+                                    </div> -->
+                                </div> 
+
+                                <div class="position-relative form-group" *ngIf="panelInput.profession == 1 || panelInput.profession == 2 || panelInput.profession == 16">
+                                    <label class=""> What is your State-Issued Medical OR Nursing License Number? </label>
+                                    <input name="licensenumber" id="licensenumber" required [(ngModel)]="panelInput.stateIssuedMedicalLicenseNumber" placeholder="License Number" type="text" class="form-control" #licensenumber="ngModel">
+                                    <div *ngIf="licensenumber.touched && licensenumber.invalid">
+                                        <small class="text-danger" *ngIf="licensenumber.errors?.['required']">This is required.</small>
+                                    </div>
+                                </div> 
+                                
+                                <div class="position-relative form-group" *ngIf="panelInput.profession == 1 || panelInput.profession == 2 || panelInput.profession == 16">
+                                    <label class=""> Is your Medical or Nursing License valid and verifiable? </label>
+                                    <select name="select" required [(ngModel)]="panelInput.ismedicalLicenseValid"
+                                    id="exampleSelect" class="form-select" #licensenumbervalid="ngModel">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                    <div *ngIf="licensenumbervalid.touched && licensenumbervalid.invalid">
+                                        <small class="text-danger" *ngIf="licensenumbervalid.errors?.['required']">This is required.</small>
+                                    </div>
+                                </div> 
+                                <div class="position-relative form-group" *ngIf="panelInput.profession == 1">
+                                    <label class="">Are you currently board certified or board-eligible?</label>
+                                    <ng-select
+                                        id="isBoardCertified"
+                                        name="isBoardCertified"
+                                        [items]="boardCertifiedoptions"
+                                         bindLabel="name"
+                                        bindValue="id"
+                                        [(ngModel)]="panelInput.isBoardCertified"
+                                        [multiple]="false"
+                                        
+                                        (change)="onboardChange($event)"
+                                        placeholder="Search your option"
+                                        #isBoardCertified="ngModel"
+                                       
+                                        >
+                                    </ng-select>
+                                    <div *ngIf="isBoardCertified.invalid && isBoardCertified.touched" class="text-danger">
+                                        Please select at least one option.
+                                    </div>
+                                    
+                                </div> 
+                                <div class="position-relative form-group" *ngIf="panelInput.profession == 2 || panelInput.profession == 16">
+                                    <label class="">What is your nursing degree or certification?</label>
+                                    <ng-select
+                                        id="certification"
+                                        name="certification"
+                                        [items]="nursedegrees"
+                                         bindLabel="name"
+                                        bindValue="id"
+                                        [(ngModel)]="panelInput.nursingDegree"
+                                        [multiple]="true"
+                                        (change)="onNursingDegreeChange($event)"
+                                        #certification="ngModel"
+                                        placeholder="Search your nursing degree"
+                                        >
+                                    </ng-select>
+                                    <div *ngIf="certification.invalid && certification.touched" class="text-danger">
+                                        Please select at least one nursing degree.
+                                    </div>
+                                </div>
+                                <input *ngIf="panelInput.nursingDegree && panelInput.nursingDegree.includes(5)" name="othernursingDegreename" id="othernursingDegreename" [(ngModel)]="panelInput.othernursingDegreename" autocomplete="off" placeholder="Please specify the nursing degree" type="text" class="form-control mt-2" #othernursingDegreename="ngModel">
+                                <div class="position-relative form-group" *ngIf="panelInput.profession == 2 || panelInput.profession == 16">
+                                    <label class="">What is your primary nursing specialty?</label>
+                                <ng-select
+                                        id="nursingspeciality"
+                                        name="nursingspeciality"
+                                        [items]="nurseSpecialityData"
+                                         bindLabel="name"
+                                        bindValue="id"
+                                        [(ngModel)]="panelInput.nursingspeciality"
+                                        [multiple]="false"
+                                        
+                                        (change)="onNursingspecialityChange($event)"
+                                        #nursingspeciality="ngModel"
+                                        placeholder="Search your nursing specialty"
+                                        >
+                                    </ng-select>
+                                    <div *ngIf="nursingspeciality.invalid && nursingspeciality.touched" class="text-danger">
+                                        Please select at least one degree.
+                                    </div>
+                                    <input *ngIf="panelInput.nursingspeciality == 45" name="othernursingspeciality" id="othernursingspeciality" [(ngModel)]="panelInput.othernursingspeciality" placeholder="Please specify the nursing speciality" autocomplete="off" type="text" class="form-control mt-2" #othernursingspeciality="ngModel">
+                                </div>
+                                <div class="position-relative form-group" *ngIf="panelInput.profession == 2 || panelInput.profession == 16">
+                                <label class="">What is your primary nursing sub-specialty, if any (optional)?</label>
+                                <input name="nursingSubScpalty" id="nursingSubScpalty" [(ngModel)]="panelInput.nursingsubspeciality" placeholder="Primary nursing sub-specialty" type="text" class="form-control" #nursingSubScplty="ngModel">
+                                <!-- <div *ngIf="nursingSubScplty.touched && nursingSubScplty.invalid">
+                                    <small class="text-danger" *ngIf="nursingSubScplty.errors?.['required']">This is required.</small>
+                                </div> -->
+                                </div>
+
+                                <div class="position-relative form-group">
+                                    <label class=""> Are you in a management level role?</label>
+                                    <select name="select" required [(ngModel)]="panelInput.isManagementLevelRole"
+                                    id="exampleSelect" class="form-select" #rolemodel="ngModel">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                                <div *ngIf="rolemodel.touched && rolemodel.invalid">
+                                    <small class="text-danger" *ngIf="rolemodel.errors?.['required']">This is required.</small>
+                                </div>
+                                </div> 
+
+                                <div class="position-relative form-group">
+                                    <label class=""> What is your job title? </label>
+                                    <input name="jobtitle" id="jobtitle" required [(ngModel)]="panelInput.jobTitle" placeholder="Job Title" type="text" class="form-control" #jobtitle="ngModel">
+                                    <div *ngIf="jobtitle.touched && jobtitle.invalid">
+                                        <small class="text-danger" *ngIf="jobtitle.errors?.['required']">This is required.</small>
+                                    </div>
+                                </div>
+
+                                <div class="position-relative form-group" *ngIf="panelInput.profession == 1 || panelInput.profession == 2 || panelInput.profession == 16">
+                                    <label class="">What Disease(s) do you specialize in treating, if any? </label>
+                                <ng-select
+                                        id="diseaseSpecialisation"
+                                        name="diseaseSpecialisation"
+                                        [items]="diseaseData"
+                                         bindLabel="name"
+                                        bindValue="id"
+                                        [(ngModel)]="panelInput.diseaseSepecialization"
+                                        [multiple]="true"
+                                        (change)="onDiseaseSpecialisationyChange($event)"
+                                        #diseaseSpecialisation="ngModel"
+                                        placeholder="Search your disease specialisation"
+                                        >
+                                    </ng-select>
+                                    <div *ngIf="diseaseSpecialisation.invalid && diseaseSpecialisation.touched" class="text-danger">
+                                        Please select at least one disease.
+                                    </div>
+                                    <input *ngIf="panelInput.diseaseSepecialization && panelInput.diseaseSepecialization.includes(421)" name="otherdisease" id="otherdisease" [(ngModel)]="panelInput.otherdiseaseSepecialization" placeholder="Please Specify the disease specialisation" autocomplete="off" type="text" class="form-control mt-2" #otherdisease="ngModel">
+
+                                </div> 
+                               </div>
+
+                              </mat-expansion-panel>
+                              <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                  <mat-panel-title>
+                                      Section 4 : Practice
+                                  </mat-panel-title>
+                                  <mat-panel-description>
+                                    
+                                  </mat-panel-description>
+                                </mat-expansion-panel-header>
+                                <div class="section1 mb-4">
+                                    <div class="position-relative form-group">
+                                        <label class="">What is your primary employer facility type or practice setting where you work?</label>
+                                    <ng-select
+                                            id="facilitytype"
+                                            name="facilitytype"
+                                            [items]="employeeFacilityTypes"
+                                             bindLabel="name"
+                                            bindValue="id"
+                                            [(ngModel)]="panelInput.employeeFacilityType"
+                                            [multiple]="true"
+                                            (change)="onEmployeeFacilityTypeChange($event)"
+                                            #facilitytype="ngModel"
+                                            placeholder="Search your employee facility type"
+                                            >
+                                        </ng-select>
+                                        <div *ngIf="facilitytype.invalid && facilitytype.touched" class="text-danger">
+                                            Please select at least one disease.
+                                        </div>
+                                        <input *ngIf="panelInput.employeeFacilityType && panelInput.employeeFacilityType.includes(14)" name="otheremployeeFacilityTypename" id="otheremployeeFacilityTypename" [(ngModel)]="panelInput.otheremployeeFacilityTypename" placeholder="Please Specify the employee facility type" autocomplete="off" type="text" class="form-control mt-2" #otheremployeeFacilityTypename="ngModel">
+                                    </div>
+    
+                                    <div class="position-relative form-group" *ngIf="panelInput.employeeFacilityType?.includes(1)">
+                                        <label class="">What type of hospital or hospital pharmacy do you work in?</label>
+                                    <ng-select
+                                            id="hosptlType"
+                                            name="hosptlType"
+                                            [items]="hosptialTypes"
+                                             bindLabel="name"
+                                            bindValue="id"
+                                            [(ngModel)]="panelInput.hospitalType"
+                                            [multiple]="true"
+                                            (change)="onHospitalTypeChange($event)"
+                                            #hosptlType="ngModel"
+                                            placeholder="Search your hospital type"
+                                            >
+                                        </ng-select>
+                                        <div *ngIf="hosptlType.invalid && hosptlType.touched" class="text-danger">
+                                            Please select at least one hospital.
+                                        </div>
+                                        <input *ngIf="panelInput.hospitalType?.includes(18)" name="otherhospitalTypename" id="otherhospitalTypename" [(ngModel)]="panelInput.otherhospitalTypename" placeholder="Please Specify the hosptial type" type="text" class="form-control mt-2" autocomplete="off" #otherhospitalTypename="ngModel">
+                                    </div>
+                                    <div class="position-relative form-group"  *ngIf="panelInput.employeeFacilityType?.includes(2)">
+                                        <label class="">What type of Clinic or Clinic Pharmacy do you work in?</label>
+                                    <ng-select
+                                            id="clinictype"
+                                            name="clinictype"
+                                            [items]="clinicTypes"
+                                             bindLabel="name"
+                                            bindValue="id"
+                                            [(ngModel)]="panelInput.clinictype"
+                                            [multiple]="false"
+                                            
+                                            (change)="onClinicTypeChange($event)"
+                                            #clinictype="ngModel"
+                                            placeholder="Search your clinic type"
+                                            >
+                                        </ng-select>
+                                        <div *ngIf="clinictype.invalid && clinictype.touched" class="text-danger">
+                                            Please select at least one clinic.
+                                        </div>
+                                        <input *ngIf="panelInput.clinictype == 12" name="otherclinictypename" id="otherclinictypename" [(ngModel)]="panelInput.otherclinictypename" placeholder="Please Specify the clinic type" type="text" class="form-control mt-2" autocomplete="off" #otherclinictypename="ngModel">
+                                    </div>
+                                    <div class="position-relative form-group"  *ngIf="panelInput.employeeFacilityType?.includes(10)">
+                                        <label class="">What type of Laboratory do you work in?</label>
+                                    <ng-select
+                                            id="labType"
+                                            name="labType"
+                                            [items]="laboratoryTypes"
+                                             bindLabel="name"
+                                            bindValue="id"
+                                            [(ngModel)]="panelInput.laborotaryType"
+                                            [multiple]="false"
+                                            
+                                            (change)="onlabTypeChange($event)"
+                                            #labType="ngModel"
+                                            placeholder="Search your laborotary type"
+                                            >
+                                        </ng-select>
+                                        <div *ngIf="labType.invalid && labType.touched" class="text-danger">
+                                            Please select at least one laborotary.
+                                        </div>
+                                        <input *ngIf="panelInput.laborotaryType == 10" name="otherlaborotaryTypename" id="otherlaborotaryTypename" [(ngModel)]="panelInput.otherlaborotaryTypename" placeholder="Please Specify the clinic type" type="text" class="form-control mt-2" autocomplete="off" #otherlaborotaryTypename="ngModel">
+                                    </div>
+                                    
+                                    <div class="position-relative form-group"  *ngIf="panelInput.employeeFacilityType?.includes(1)">
+                                        <label class="">What is the approximate total number of patient beds in your hospital?</label>
+                                        <input name="bedcount" id="bedcount" required [(ngModel)]="panelInput.bedCount" placeholder="Approximate number of patient beds" type="text" class="form-control" #bedcount="ngModel">
+                                    <div *ngIf="bedcount.touched && bedcount.invalid">
+                                        <small class="text-danger" *ngIf="bedcount.errors?.['required']">This is required.</small>
+                                    </div>
+                                    </div>
+                                    <div class="position-relative form-group"  *ngIf="panelInput.hospitalType?.includes(17)">
+                                        <label class="">If you work in a health system with multiple hospitals, what is the approximate number of hospitals that are in your system today?  Please note: we are not asking for patient bed count, but hospital count. What is the approximate total number of patient beds in your hospital?</label>
+                                        <input name="hospitalcount" id="hospitalcount" required [(ngModel)]="panelInput.hospitalcount" placeholder="Approximate number of hosptial count" type="text" class="form-control" #hospitalcount="ngModel">
+                                    <div *ngIf="hospitalcount.touched && hospitalcount.invalid">
+                                        <small class="text-danger" *ngIf="hospitalcount.errors?.['required']">This is required.</small>
+                                    </div>
+                                    </div>
+                                    <div class="position-relative form-group">
+                                        <label class="">What is the approximate number of employees in your{{employeeFacilityType}} ? </label>
+                                        <input name="empCount" id="empCount" required [(ngModel)]="panelInput.employeeCount" placeholder="Approximate number of employee" type="text" class="form-control" #empCount="ngModel">
+                                    <div *ngIf="empCount.touched && empCount.invalid">
+                                        <small class="text-danger" *ngIf="empCount.errors?.['required']">This is required.</small>
+                                    </div>
+                                    </div>
+    
+                                    <div class="position-relative form-group">
+                                        <label class="">Name of Employer/Organization </label>
+                                        <input name="orgName" id="orgName" required [(ngModel)]="panelInput.orgName" placeholder="Organization name" type="text" class="form-control" #orgName="ngModel">
+                                        <div *ngIf="orgName.touched && orgName.invalid">
+                                            <small class="text-danger" *ngIf="orgName.errors?.['required']">This is required.</small>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative form-group" *ngIf="panelInput.profession == 1">
+                                        <label class="">What type(s) of insurance do you currently accept from patients, as a healthcare provider ?
+                                    </label>
+                                    <ng-select
+                                            id="insuranceType"
+                                            name="insuranceType"
+                                            [items]="insuranceTypes"
+                                             bindLabel="name"
+                                            bindValue="id"
+                                            [(ngModel)]="panelInput.insurancetype"
+                                            [multiple]="true"
+                                            (change)="onInsuranceTypeChange($event)"
+                                            #insuranceType="ngModel"
+                                            placeholder="Search your insurance type"
+                                            >
+                                        </ng-select>
+                                        <div *ngIf="insuranceType.invalid && insuranceType.touched" class="text-danger">
+                                            Please select at least one Insurance.
+                                        </div>
+                                        <input *ngIf="panelInput.insurancetype?.includes(5)" name="otherinsurancetypename" id="otherinsurancetypename" [(ngModel)]="panelInput.otherinsurancetypename" placeholder="Please Specify the insurance name" type="text" autocomplete="off" class="form-control mt-2" #otherinsurancetypename="ngModel">
+                                    </div>
+                                </div>
+                              </mat-expansion-panel>
+                          </mat-accordion>
+                    </div>
+                    
+                </div>
+                <!-- <div class="card-footer">
+                    <div>
+                        <p>Your selections can be saved and reused any time as templates. Just make your selections above and click "Save as template" button</p>
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="load d-flex align-items-center">
+                                    <select class="form-control mr-3">
+                                        <option>Template 1</option>
+                                        <option>Template 2</option>
+                                        <option>Template 3</option>
+                                        <option>Template 4</option>
+                                    </select>
+                                    <button type="button" class="btn btn-sm btn-success">Load</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-1">
+                                OR
+                            </div>
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-sm btn-info">Save as template</button>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>     -->
+            </div>
+        </div>
+        <div class="col-lg-5" id="selecteditems">
+            <div class="membersmatched">
+                <div class="mb-3 widget-content bg-grow-early">
+                    <div class="widget-content-wrapper text-white">
+                        <div class="widget-content-left">
+                            <div class="widget-heading" style="opacity: 1;">Members matched</div>
+                            <div class="widget-subheading" style="opacity: 1;">Total members as per the selection</div>
+                        </div>
+                        <div class="widget-content-right" *ngIf="subPanel">
+                            <div class="widget-numbers text-white" style="opacity: 1;"><span>{{subPanel.memebersMatched}}</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-card card mb-2" id="createpanelmain">
+                <div class="card-header">Selection Creator 
+                                                         
+                </div>
+                <div class="card-body">
+                    <form class="formselector" #subpanelForm="ngForm">
+                        <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="sectionname">Selection Name</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <input name="selnname" id="sectionname" placeholder="Enter selection name" type="text" class="form-control" required [(ngModel)]="subPanel.name">
+                            </div>
+                        </div>
+                        <!-- <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="channalname">Panel</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <ng-select
+                                        id="panel"
+                                        name="panel"
+                                        [items]="panelList"
+                                        bindValue="id"
+                                        [(ngModel)]="subPanel.panel"
+                                        [multiple]="false"
+                                        placeholder="Select the Panel"
+                                        required
+                                        #panel="ngModel"
+                                        >
+                                        <ng-template ng-label-tmp let-item="item">
+                                            {{ item.name }}
+                                            </ng-template>
+                                            <ng-template ng-option-tmp let-item="item">
+                                            {{ item.name }}
+                                            </ng-template>
+                                    </ng-select>
+                            </div>
+                        </div> -->
+                        <!-- <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="invite">Already Invited</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <input name="selnname" id="invite" placeholder="" value="100" type="number" class="form-control" disabled>
+                            </div>
+                        </div> -->
+                        <!-- <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="matchedmembers">Members Matched</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <input name="matchedname" id="matchedmembers" placeholder="" value="100" type="number" class="form-control" [(ngModel)]="subPanel.memebersMatched"   disabled>
+                            </div>
+                        </div> -->
+                        <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="invitesrequired">Invites Required</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <input name="invitesrequired" id="invitesrequired" [(ngModel)]="subPanel.invites_required"  placeholder="" class="form-control" required>
+                            </div>
+                        </div>
+                        <!-- <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="combination">Combine Qs with</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <select value="Cole" class="form-control">
+                                    <option>And</option>
+                                    <option>Or</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        <!-- <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="hierachy">Invite Hierachy</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <select value="Cole" class="form-control">
+                                    <option>Most Responsive</option>
+                                    <option>Most wanted</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        <div class="divider"></div>
+                        <div class="row mb-3">
+                            <!-- <div class="col-lg-6">
+                                <div class="buttonsec">
+                                    <div class="bactoion">
+                                        <button type="button" class="w-100 btn btn-success mr-2">
+                                            Advance
+                                        </button>
+
+                                        <div><a href="#">Reset</a></div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="">
+                                <div class="buttonsec d-flex align-items-center justify-content-between">
+                                    <h6>Apply Panel Filter</h6>
+                                    <div class="bactoion w-50 d-flex align-items-center">
+                                        <button type="button" class="w-100 btn btn-info mr-2" (click)="applySubpanel()">
+                                            Apply
+                                        </button>
+                                        <a (click)="resetsubPanel()" class="text-primary"  style="cursor: pointer;">
+                                            Reset
+                                        </a>
+                                        <div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                               
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="">
+                                <div class="buttonsec d-flex align-items-center justify-content-between">
+                                    <h6>Manage Inivitation</h6>
+                                    <div class="bactoion w-50">
+                                        <button [disabled]="!subPanel.subpanel_token || (subpanelForm.invalid)" (click)="gotoPanelInvitation()" type="button" class="w-100 btn btn-warning mr-2" >
+                                            Invite
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+                        
+                        <div class="row">
+                            <!-- <div class="col-lg-6">
+                                <div class="buttonsec">
+                                    <div class="bactoion">
+                                        <button type="button" class="w-100 btn btn-primary mr-2">
+                                            Export
+                                        </button>   
+                                    </div>
+                                </div>
+                            </div> -->
+                           
+                        </div>
+                        <div class="divider"></div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- <div class="main-card card mb-3" id="createpanelmain">
+                <div class="card-header">Invites Calculator 
+                                                         
+                </div>
+                <div class="card-body">
+                    <form class="formselector">
+                        <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="exampleEmail22">Interviews Required</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <input name="selnname" id="exampleEmail22" placeholder="Enter selection name" type="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="exampleEmail22">Incidence Rate(%)</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <input name="selnname" id="exampleEmail22" placeholder="Enter selection name" type="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="exampleEmail22">Response Rate</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <input name="selnname" id="exampleEmail22" placeholder="" value="100" type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="exampleEmail22">Predicted Invites Required</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="d-flex">
+                                    <input name="selnname" id="exampleEmail22" placeholder="" value="100" type="number" class="form-control mr-2" disabled>
+                                    <button type="button" class="btn btn-info">Set</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="exampleEmail22">Combine Qs with</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <select value="Cole" class="form-control">
+                                    <option>And</option>
+                                    <option>Or</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group align-items-center">
+                            <div class="col-lg-4">
+                                <label for="exampleEmail22">Invite Hierachy</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <select value="Cole" class="form-control">
+                                    <option>Most Responsive</option>
+                                    <option>Most wanted</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+
+            </div> -->
+        </div>
+        
+    </div>  
+</div>

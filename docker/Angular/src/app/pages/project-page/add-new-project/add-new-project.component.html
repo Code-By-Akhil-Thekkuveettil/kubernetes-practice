@@ -1,0 +1,396 @@
+
+    <div class="app-main__inner">
+        <div class="app-page-title">
+            <div class="page-title-wrapper">
+                <div class="page-title-heading">
+                    <div class="page-title-icon">
+                        <i class="pe-7s-copy-file icon-gradient bg-mean-fruit">
+                        </i>
+                    </div>
+                    <div>Create Project
+                        <div class="page-title-subheading">In this page we can manage projects, edits and delete.
+                        </div>
+                    </div>
+                </div>
+                <div class="page-title-actions d-none">
+                    <div class="page-title-right">
+                        <!-- <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a routerLink="/dashboard">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a routerLink="/project">Projects</a></li>
+                            <li class="breadcrumb-item active">Create Project</li>
+                        </ol> -->
+                        <div class="btn-actions-pane-right">                                                                               
+                            <a (click)="goToProject()" type="button" class="btn mr-2 mb-2 btn-primary">Back to Projects</a>
+                    </div> 
+                    </div>
+                    <!-- <div class="d-inline-block dropdown">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                            <span class="btn-icon-wrapper pr-2 opacity-7">
+                                <i class="fa fa-business-time fa-w-20"></i>
+                            </span>
+                            Buttons
+                        </button>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="javascript:void(0);" class="nav-link">
+                                        <i class="nav-link-icon lnr-inbox"></i>
+                                        <span>
+                                            Inbox
+                                        </span>
+                                        <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0);" class="nav-link">
+                                        <i class="nav-link-icon lnr-book"></i>
+                                        <span>
+                                            Book
+                                        </span>
+                                        <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0);" class="nav-link">
+                                        <i class="nav-link-icon lnr-picture"></i>
+                                        <span>
+                                            Picture
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a disabled href="javascript:void(0);" class="nav-link disabled">
+                                        <i class="nav-link-icon lnr-file-empty"></i>
+                                        <span>
+                                            File Disabled
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="page-title-actions">
+                    <div class="page-title-right">
+                        <!-- <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a (click)="goToProject()">Project</a></li>
+                            <li class="breadcrumb-item active"><a routerLink="/createproject">Create Project</a></li>
+                        </ol> -->
+                    </div>                   
+                </div> 
+            </div>
+        </div>
+        <div class="row" id="projectcreate">
+            <div class="col-md-12">
+                <div class="main-card card">
+                    <div class="">
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item text-center">
+                                <a data-toggle="tab" class="nav-link" [ngClass]="{active : currentTab == 'tab1'}">
+                                    <div class="tabwrapper d-flex align-items-center">
+                                        <div class="icon mr-2">
+                                            <i class="pe-7s-copy-file fs-2rem"></i>
+                                        </div>
+                                        <div class="tabtitle">
+                                            Create Project
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a data-toggle="tab" class="nav-link" [ngClass]="{active : currentTab == 'tab2'}">
+                                <div class="tabwrapper d-flex align-items-center">
+                                    <div class="icon mr-2">
+                                        <i class="pe-7s-user fs-2rem"></i>
+                                    </div>
+                                    <div class="tabtitle">
+                                        Assign Manager
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li class="nav-item text-center"><a data-toggle="tab" class="nav-link" [ngClass]="{active : currentTab == 'tab3'}">
+                                <div class="tabwrapper d-flex align-items-center">
+                                    <div class="icon mr-2">
+                                        <i class="pe-7s-note2 fs-2rem"></i>
+                                    </div>
+                                    <div class="tabtitle">
+                                        Quota Groups
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body tab-content">
+                    <div class="tab-pane" [ngClass]="{active : currentTab == 'tab1'}" id="tab-eg14-0" role="tabpanel" *ngIf="currentTab == 'tab1'">
+                            <div class="alert alert-custom alert-light-primary fade show mb-2" role="alert">
+                                <div class="alert-icon"><i class="flaticon-warning"></i></div>
+                                <div class="alert-text">Fill in all information below. You can change it later in the project settings. <a href="#">Click here</a> to learn more about how to use the project wizard.</div>
+                                
+                            </div>
+                            <div class="row justify-content-center py-8 px-8 py-lg-15 px-lg-10">
+                                <div class="col-lg-8">
+                                    <form class="form" id="kt_form" #projectForm="ngForm">
+                                        <div class="pb-0">
+                                            <div class="mb-10 font-weight-bold text-dark">Enter Project Details</div>
+
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                      <label>Project Name</label>
+                                                      <input [disabled]="projectid" type="text" class="form-control" name="fname" placeholder="" [(ngModel)]="projectData.name" (change)="projectData.name=projectData.name.trim()" autocomplete="off" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Client</label>
+                                                        <ng-select
+                                                                id="client"
+                                                                name="client"
+                                                                [items]="clientlist"
+                                                                bindValue="token"
+                                                                [(ngModel)]="projectData.clientid"
+                                                                [multiple]="false"
+                                                                [clearable]="false"
+                                                                placeholder="Select the client"
+                                                                required
+                                                                #client="ngModel"
+                                                                >
+                                                                <ng-template ng-label-tmp let-item="item">
+                                                                    {{ item.company_name  }} 
+                                                                  </ng-template>
+                                                                  <ng-template ng-option-tmp let-item="item">
+                                                                    {{ item.company_name  }} 
+                                                                  </ng-template>
+                                                            </ng-select>
+                                                            <div *ngIf="client.invalid && client.touched" class="text-danger">
+                                                                Please select one client.
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Alternate Project Code</label>
+                                                        <input type="text" class="form-control"  autocomplete="off" name="lname"  [(ngModel)]="projectData.alternativeProjectCode">
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Client Project Code</label>
+                                                        <input type="text" class="form-control"  autocomplete="off" name="lname"  [(ngModel)]="projectData.clientProjectCode">
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Project Type</label>
+                                                        <div class="radio-inline">
+                                                            <label class="radio">
+                                                                <input type="radio" required name="radios2" [(ngModel)]="projectData.projectType" value="quantitative">
+                                                                <span></span>
+                                                                Quantitative
+                                                            </label>
+                                                            <label class="radio">
+                                                                <input type="radio" required name="radios2" [(ngModel)]="projectData.projectType" value="qualitative">
+                                                                <span></span>
+                                                                Qualitative
+                                                            </label>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                          
+                                          
+                                          
+                                          
+                                          </div>
+                                          <div class="d-flex align-items-center p-0" style="justify-content: flex-end;">
+                                            <!-- <button href="javascript:void(0);" class="btn btn-default btn-lg py-2 px-5">Previous</button> -->
+                                            <button (click)="addProject()" [disabled]="!projectForm.form.valid || saving" class="btn btn-primary btn-lg py-2 px-5"><i *ngIf="saving" class="fa fa-spin fa-spinner"></i>Continue</button>
+                                        </div>
+                                       </form>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="tab-pane" [ngClass]="{active : currentTab == 'tab2'}"  id="tab-eg14-1" role="tabpanel" *ngIf="currentTab == 'tab2'">
+                            <div class="alert alert-custom alert-light-primary fade show mb-2" role="alert">
+                                <div class="alert-icon"><i class="flaticon-warning"></i></div>
+                                <div class="alert-text">Select one or more project managers and assign a lead project manager and a sales manager. If you skip this step a mail will be sent to the management team requesting to claim this project. <a href="#">Click here</a> to learn more about how to use the project wizard.</div>
+                                
+                            </div>
+                            <div class="row justify-content-center py-8 px-8 py-lg-15 px-lg-10">
+                                <div class="col-lg-8">
+                                    <form class="form" id="kt_form" #managerForm="ngForm">
+                                        <div class="mb-5">
+                                            <div class="row checkbox-inline">
+                                                <div class="col-lg-3 mb-2" *ngFor="let manager of projectmanagerlist;let i = index">
+                                                    <label class="checkbox" for="checkbox-{{ i }}">
+                                                        <input 
+                                                        type="checkbox" 
+                                                        name="{{manager.token}}" 
+                                                        [(ngModel)]="manager.selected" 
+                                                        name="mngr-{{manager.token}}"
+                                                        id="checkbox-{{ i }}"
+                                                        (ngModelChange)="toggleSelection()">
+                                                        <span></span>
+                                                        {{manager.first_name}} {{manager.last_name}}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pb-0">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                      <label>Lead Project Manager</label>
+                                                    <ng-select
+                                                                id="leadManager"
+                                                                name="leadManager"
+                                                                [items]="managers"
+                                                                bindValue="token"
+                                                                [(ngModel)]="projectData.leadManagerId"
+                                                                [multiple]="false"
+                                                                [clearable]="false"
+                                                                placeholder="Select the lead manager"
+                                                                required
+                                                                #leadManager="ngModel"
+                                                                >
+                                                                <ng-template ng-label-tmp let-item="item">
+                                                                    {{ item.first_name }} {{ item.last_name }}
+                                                                  </ng-template>
+                                                                  <ng-template ng-option-tmp let-item="item">
+                                                                    {{ item.first_name }} {{ item.last_name }}
+                                                                  </ng-template>
+                                                            </ng-select>
+                                                            <div *ngIf="leadManager.invalid && leadManager.touched" class="text-danger">
+                                                                Please select one lead manager.
+                                                            </div>
+                                                     </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Lead Sales Manager</label>
+                                                        <ng-select
+                                                                id="SalesManager"
+                                                                name="SalesManager"
+                                                                [items]="managerlist"
+                                                                bindValue="token"
+                                                                [(ngModel)]="projectData.salesManagerId"
+                                                                [multiple]="false"
+                                                                [clearable]="false"
+                                                                placeholder="Select the Sales manager"
+                                                                required
+                                                                #SalesManager="ngModel"
+                                                                >
+                                                                <ng-template ng-label-tmp let-item="item">
+                                                                    {{ item.first_name }} {{ item.last_name }}
+                                                                  </ng-template>
+                                                                  <ng-template ng-option-tmp let-item="item">
+                                                                    {{ item.first_name }} {{ item.last_name }}
+                                                                  </ng-template>
+                                                            </ng-select>
+                                                            <div *ngIf="SalesManager.invalid && SalesManager.touched" class="text-danger">
+                                                                Please select one sales manager.
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="d-flex justify-content-between align-items-center p-0">
+                                            <button (click)="changeTab('tab1')" class="btn btn-default btn-lg py-2 px-5">Previous</button>
+                                            <button (click)="updateProject()" [disabled]="!managerForm.form.valid || (managers && managers.length == 0)"  class="btn btn-primary btn-lg py-2 px-5">Continue</button>
+                                        </div>
+                                       </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            <div class="tab-pane" [ngClass]="{active : currentTab == 'tab3'}" id="tab-eg14-2" role="tabpanel" *ngIf="currentTab == 'tab3'">
+                                <div class="alert alert-custom alert-light-primary fade show mb-2" role="alert">
+                                    <div class="alert-icon"><i class="flaticon-warning"></i></div>
+                                    <div class="alert-text">Click on the button "Create Quota Groups" to create a new quota group. You can skip this step and change the information later in the project settings. <a href="#">Click here</a> to learn more about how to use the project wizard.</div>
+                                    
+                                </div>
+                                <div class="row justify-content-center py-8 px-8 py-lg-15 px-lg-10">
+                                    <div class="col-lg-12">
+                                        <form class="form" id="kt_form">
+                                            
+                                            <div class="pb-0">                                                               
+                                                    <div class="main-card mb-5 card">
+                                                        <div class="card-header">Quota Groups         
+                                                            <div class="btn-actions-pane-right">                                                                               
+                                                                    <button type="button" (click)="addQuotaGroup()" class="btn mr-2 mb-2 btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-plus"></i> Create Quota Groups</button>
+                                                            </div>                              
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table *ngIf="quotaList && quotaList.length > 0" class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                <thead>
+                                                                <tr>                                               
+                                                                    <th>Country</th>
+                                                                    <th class="text-left">Quota Group Name</th>
+                                                                    <th class="text-left">
+                                                                        <span *ngIf="projectData.projectType == 'qualitative'" >Interviews Required</span>
+                                                                        <span *ngIf="projectData.projectType == 'quantitative'" >Survey Respondents Required</span> </th>
+                                                                    <th class="text-left">CPI</th>
+                                                                    <th class="text-left">Incentive</th>
+                                                                    <th class="text-center">Action</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <tr *ngFor="let quota of quotaList">                                               
+                                                                    <td>
+                                                                        {{quota.country_name}}
+                                                                    </td>
+                                                                    <td class="text-left">{{quota.name}} </td>
+                                                                    <td class="text-left">
+                                                                        {{quota.interviews}}
+                                                                    </td>
+                                                                    <td class="text-left">
+                                                                        {{quota.CPI}}
+                                                                    </td>
+                                                                    <td class="text-left">
+                                                                        {{quota.incentives}}
+                                                                    </td>
+                                                                    <td class="text-center actionpro">
+                                                                        <button (click)="editQuotaGroup(quota.token)" type="button" id="PopoverCustomT-1" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-default btn-sm" data-toggle="tooltip" title="Edit" data-placement="top">
+                                                                            <i class="pe-7s-pen"></i>
+                                                                        </button>                                                                                       
+                                                                        <button [disabled]="quotadeleting" (click)="deleteQuota(quota.token)" type="button" id="PopoverCustomT-1" class="btn btn-default btn-sm" data-toggle="tooltip" title="Delete" data-placement="top">
+                                                                            <i class="pe-7s-trash"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                </tr>                                 
+                                                                </tbody>
+                                                            </table>
+                                                        </div>                                    
+                                                    </div>
+                                              </div>
+                                              <div class="d-flex justify-content-between align-items-center p-0 col-lg-8 m-auto">
+                                                <button (click)="changeTab('tab2')" class="btn btn-default btn-lg py-2 px-5">Previous</button>
+                                                <button (click)="backtoProjects()" class="btn btn-primary btn-lg py-2 px-5" data-toggle="modal" data-target=".successfullmessage" [disabled]="saving"><i *ngIf="saving" class="fa fa-spin fa-spinner"></i>Finish</button>
+                                            </div>
+                                           </form>
+                                    </div>
+                                </div>
+                        </div>
+                         <div>
+
+                         </div>  
+                    </div>
+                    <!-- <div class="d-flex justify-content-between align-items-center card-footer col-lg-5 m-auto">
+                        <a href="javascript:void(0);" class="btn btn-default btn-lg py-2 px-5">Previous</a>
+                        <a href="javascript:void(0);" class="btn btn-primary btn-lg py-2 px-5">Continue</a>
+                    </div> -->
+                  </div>
+            </div>
+        </div>                       
+    </div>
+
+    
+
+       

@@ -1,0 +1,89 @@
+<div class="app-main__inner">
+    <div class="app-page-title">
+        <div class="page-title-wrapper">
+            <div class="page-title-heading">
+                <div class="page-title-icon">
+                    <i class="pe-7s-copy-file icon-gradient bg-mean-fruit">
+                    </i>
+                </div>
+                <div>Panels
+                    <div class="page-title-subheading">In this page we can manage panels.
+                    </div>
+                </div>
+            </div>
+            <div class="page-title-actions">
+                <!-- <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a routerLink="/dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a routerLink="/project">Projects</a></li>
+                    </ol>
+                </div> -->
+            </div>    
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-card mb-3 card">
+                <div class="card-header">Panels  
+                    <!-- <div class="btn-actions-pane-right">       
+                        <a type="button" class="btn mr-2 mb-2 btn-primary"><i class="fa fa-plus"></i> Create Project</a>
+                </div>   -->
+                </div>
+                <div class="table-responsive">
+                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                        <thead>
+                        <tr>                                               
+                            <th>Panel</th>
+                            <!-- <th class="text-left">Lifecycle</th> -->
+                            <th class="text-left">Description</th>
+                            <th class="text-left">Status</th>
+                        
+                            <th class="text-center">Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let panel of panelList">                                               
+                                <td>
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <!-- <div class="widget-content-left mr-3">
+                                                <div class="widget-content-left">
+                                                    <div class="swatch-holder swatch-holder-lg bg-info" id="TooltipC-3" data-toggle="tooltip" title="In-Progress"></div>
+                                                </div>
+                                            </div> -->
+                                            <div class="widget-content-left flex2">
+                                                <div class="widget-heading"><a>{{panel.name}}</a></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-left">{{panel.description}}</td>
+                                <td class="text-left">{{panel.status | titlecase}}</td>
+                                <td class="text-center actionpro">
+                                    <!-- <button  type="button" id="PopoverCustomT-1" class="btn btn-default btn-sm" data-toggle="tooltip" title="Edit" data-placement="top">
+                                        <i class="pe-7s-pen"></i>
+                                    </button> -->
+                                    <button (click)="sharePanelLink(panel.token)" type="button" id="PopoverCustomT-1" class="btn btn-default btn-sm" data-toggle="tooltip" title="Copy joiner link" data-placement="top">
+                                        <i class="pe-7s-copy-file"></i>
+                                    </button>
+                                    <!-- <button type="button" id="PopoverCustomT-1" class="btn btn-default btn-sm" data-toggle="tooltip" title="Insights" data-placement="top">
+                                        <i class="pe-7s-graph"></i>
+                                    </button>
+                                    <button type="button" id="PopoverCustomT-1" class="btn btn-default btn-sm" data-toggle="tooltip" title="Download" data-placement="top">
+                                        <i class="pe-7s-download"></i>
+                                    </button>
+                                    <button type="button" id="PopoverCustomT-1" class="btn btn-default btn-sm" data-toggle="tooltip" title="Delete" data-placement="top">
+                                        <i class="pe-7s-trash"></i>
+                                    </button> -->
+                                </td>
+                            </tr>  
+                       
+                                                                
+                        </tbody>
+                    </table>
+                </div>                                    
+            </div>
+        </div>
+    </div>                       
+</div>
