@@ -17,5 +17,9 @@ spec:
         image: akhiltofficial/saas:frontend
         ports:
         - containerPort: 80
+        env:
+        - name: apiUrl
+          value: "www.b.com"
+
 
 
