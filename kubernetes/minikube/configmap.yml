@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: appsettings-config
-data:
-  appsetting.json: |
-    {
-      "apiUrl": "www.b25.com"
-    }
