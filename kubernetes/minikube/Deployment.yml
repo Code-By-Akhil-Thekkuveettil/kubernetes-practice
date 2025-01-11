@@ -20,6 +20,9 @@ spec:
         env:
         - name: apiUrl
           value: "www.b.com"
+        - name: surveyLink
+          value: "www.b.com"
+        
 
 
 
