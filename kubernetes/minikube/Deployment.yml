@@ -18,8 +18,8 @@ spec:
         command: ["sh", "-c", "kubectl port-forward svc/python-app 5000:80 --namespace=saas"]
         resources:
           requests:
-            cpu: 100m
-            memory: 200Mi
+            cpu: 200m
+            memory: 500Mi
 
       containers:
       - name: python-app
