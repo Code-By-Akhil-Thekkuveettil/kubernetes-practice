@@ -5,5 +5,5 @@ metadata:
 data:
   appsetting.json: |
     {
-      "apiUrl": "www.b.com"
+      "apiUrl": "www.b25.com"
     }
