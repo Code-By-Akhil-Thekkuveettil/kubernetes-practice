@@ -11,3 +11,14 @@ spec:
       targetPort: 80
   type: NodePort
 
+# Port-forward to 80:5000 on localhost
+apiVersion: v1
+kind: PortForward
+metadata:
+  name: python-app-service-port-forward
+spec:
+  serviceName: python-app-service
+  port:
+    - local: 5000
+      target: 80
+  namespace: default
