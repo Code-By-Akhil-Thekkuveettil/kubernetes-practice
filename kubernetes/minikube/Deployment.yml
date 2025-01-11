@@ -15,13 +15,16 @@ spec:
       containers:
       - name: python-app
         image: akhiltofficial/saas:frontend
+        volumeMounts:
+        - name: appsettings-volume
+          mountPath: /src/assets/config/config.json
+          subPath: config.json
+      volumes:
+      - name: appsettings-volume
+        configMap:
+          name: appsettings-config
         ports:
         - containerPort: 80
-        env:
-        - name: apiUrl
-          value: "www.b.com"
-        - name: surveyLink
-          value: "www.b.com"
         
 
 
