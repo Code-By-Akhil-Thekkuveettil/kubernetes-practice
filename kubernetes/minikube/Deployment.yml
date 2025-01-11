@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+kubernetes/minikube/Deployment.ymlapiVersion: apps/v1
 kind: Deployment
 metadata:
   name: python-app
@@ -11,10 +11,9 @@ spec:
     metadata:
       labels:
         app: python-app
-
+    spec:
       containers:
       - name: python-app
         image: akhiltofficial/saas:frontend
         ports:
         - containerPort: 80
-          hostPort: 5000  # Expose container port to localhost
