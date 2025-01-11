@@ -12,12 +12,17 @@ spec:
       labels:
         app: python-app
     spec:
+      initContainers:
+      - name: port-forward-localhost
+        image: bitnami/kubectl:latest
+        command: ["sh", "-c", "kubectl port-forward svc/python-app 5000:80 --namespace=default"]
+        resources:
+          requests:
+            cpu: 100m
+            memory: 200Mi
+
       containers:
       - name: python-app
         image: akhiltofficial/saas:frontend
         ports:
         - containerPort: 80
-        
-
-
-
