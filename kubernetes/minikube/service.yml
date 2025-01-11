@@ -21,4 +21,4 @@ spec:
   port:
     - local: 5000
       target: 80
-  namespace: default
+  namespace: saas
