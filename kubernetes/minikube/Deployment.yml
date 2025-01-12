@@ -15,5 +15,7 @@ spec:
       containers:
       - name: python-app
         image: akhiltofficial/saas:frontend
+     imagePullSecrets:
+      - name: dockerhub
         ports:
         - containerPort: 80
