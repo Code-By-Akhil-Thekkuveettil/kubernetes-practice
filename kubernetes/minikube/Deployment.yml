@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: akhiltofficial/saas:frontend
+        image: akhiltofficial/saas:test
 
         ports:
         - containerPort: 80
