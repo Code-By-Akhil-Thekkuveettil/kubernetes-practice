@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,9 +15,7 @@ spec:
       containers:
       - name: python-app
         image: akhiltofficial/saas:test1
-      imagePullSecrets:
-      - name: private-registry-secret
-
         ports:
         - containerPort: 80
-
+      imagePullSecrets:
+      - name: private-registry-secret
