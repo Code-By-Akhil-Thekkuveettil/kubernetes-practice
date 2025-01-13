@@ -17,7 +17,7 @@ spec:
       - name: python-app
         image: akhiltofficial/saas:test1
       imagePullSecrets:
-      - name: docker-secret
+      - name: private-registry-secret
 
         ports:
         - containerPort: 80
