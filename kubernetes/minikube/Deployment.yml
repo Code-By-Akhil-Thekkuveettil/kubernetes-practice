@@ -15,6 +15,7 @@ spec:
       containers:
       - name: python-app
         image: akhiltofficial/saas:test1
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
       imagePullSecrets:
