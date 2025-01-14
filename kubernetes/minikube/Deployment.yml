@@ -6,7 +6,7 @@ metadata:
     argocd-image-updater.argoproj.io/image-list: "akhiltofficial/saas"
     argocd-image-updater.argoproj.io/update-strategy: "automatic"
 spec:
-  replicas: 20
+  replicas: 4
   selector:
     matchLabels:
       app: python-app
