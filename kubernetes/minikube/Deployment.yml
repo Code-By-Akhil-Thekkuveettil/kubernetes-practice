@@ -4,7 +4,7 @@ metadata:
   name: python-app
   annotations:
     argocd-image-updater.argoproj.io/image-list: "akhiltofficial/saas"
-    argocd-image-updater.argoproj.io/akhiltofficial/saas.update-strategy: test1
+    argocd-image-updater.argoproj.io/akhiltofficial-saas.update-strategy: test1
 spec:
   replicas: 1
   selector:
