@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: saas-ingres
-  namespace: website
+  namespace: calculator
   annotations:
    # Use Traefik as the Ingress controller
     traefik.enable: "true" # Ensure Traefik picks up this Ingress
