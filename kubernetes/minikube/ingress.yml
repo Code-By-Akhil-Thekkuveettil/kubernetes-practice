@@ -18,3 +18,7 @@ spec:
                 name: python-app-service
                 port:
                   number: 80
+  tls:
+    - hosts:
+        - calculator.localhost.com
+      secretName: calculator-tls
