@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: calculator.testdemoapplication.shop# Replace with your domain
+    - host: calculator.testdemoapplication.shop # Replace with your domain
       http:
         paths:
           - path: /
