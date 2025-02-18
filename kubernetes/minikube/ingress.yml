@@ -1,21 +1,26 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: saas-ingres
+  name: calculator-server-ingress
   namespace: calculator
   annotations:
-   # Use Traefik as the Ingress controller
-    traefik.enable: "true" # Ensure Traefik picks up this Ingress
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    nginx.ingress.kubernetes.io/proxy-body-size: "100m"
+    nginx.ingress.kubernetes.io/proxy-buffering: "off"
 spec:
-  ingressClassName: traefik
+  ingressClassName: nginx
   rules:
-  - host: argo.local3.com # Replace with your desired hostname
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: python-app-service
-            port:
-              number: 80
+    - host: calculator.localhost.com # Replace with your domain
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: python-app
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - calculator.localhost.com
+      secretName: argocd-tls
