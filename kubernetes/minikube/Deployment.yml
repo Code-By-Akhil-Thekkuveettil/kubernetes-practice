@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: akhiltofficial/saas:303690d660a764ea5f589b5e63a7c8a01eaf9d10
+        image: akhiltofficial/saas:c7faeae90c8b5b5e89cc87db2ceb8fc28bc32c1c
         imagePullPolicy: Always
         ports:
         - containerPort: 80
