@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: docker.io/akhiltofficial/saas:8
+        image: akhiltofficial/saas:e635496eeb58d5edae9131bbb15d392bf0d35195
         imagePullPolicy: Always
         ports:
         - containerPort: 80
