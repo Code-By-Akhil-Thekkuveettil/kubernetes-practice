@@ -23,4 +23,4 @@ spec:
   tls:
     - hosts:
         - calculator.testdemoapplication.shop
-      secretName: calculator-tls
+      secretName: calculator-tls  
