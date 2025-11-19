@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: python-app
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: python-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: akhiltofficial/saas:frontend
+        image: akhiltofficial/saas:7
         imagePullPolicy: Always
         ports:
         - containerPort: 80
