@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: calculator-server-ingress
-  namespace: calculator
+  namespace: python-app
   annotations:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 
