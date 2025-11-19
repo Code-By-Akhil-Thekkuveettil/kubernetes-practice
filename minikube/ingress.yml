@@ -4,8 +4,7 @@ metadata:
   name: calculator-server-ingress
   namespace: calculator
   annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 
 spec:
   ingressClassName: nginx
@@ -20,7 +19,4 @@ spec:
                 name: python-app-service
                 port:
                   number: 80
-  tls:
-    - hosts:
-        - calculator.testdemoapplication.shop
-      secretName: calculator-tls  
+
